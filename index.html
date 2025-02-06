@@ -1,22 +1,48 @@
 <!DOCTYPE html>
-<hmtl lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phoenix Tech - Providing accountable tech reporting since 2025</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
 </head>
-<header> 
-    <h1>Phoenix Tech - Providing accountable tech reporting since 2025</h1>
-    <nav>
-        <pre> <a href="Hardware">Hardware</a>   <a href="AI">AI</a>     <a href="Apple">Apple</a></pre>
-    </nav>
-
-</header>
-
 <body>
-    <div class ="articleDiv">
-        <p1> article</p1>
+    <div class="header">Latest Tech News</div>
+    <div class="container">
+        <div class="article">
+            <h2><a href="AI.html">AI is Revolutionizing the Industry</a></h2>
+            <p>Artificial intelligence continues to transform various sectors, improving efficiency and innovation.</p>
+        </div>
+        <div class="article">
+            <h2>New Smartphone Launched</h2>
+            <p>The latest smartphone features cutting-edge technology and an improved user experience.</p>
+        </div>
+        <div class="article">
+            <h2>Cybersecurity in 2025</h2>
+            <p>Experts predict major advancements in cybersecurity to combat emerging threats.</p>
+        </div>
     </div>
-</body>
 
-</hmtl>
+    <!-- User Registration Form -->
+    <div class="form-container">
+        <h2>Create an Account</h2>
+        <form id="registrationForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="6">
+
+            <button type="submit">Register</button>
+        </form>
+        <p id="formMessage"></p>
+    </div>
+
+    <div class="footer">&copy; 2025 Phoenix Tech</div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
