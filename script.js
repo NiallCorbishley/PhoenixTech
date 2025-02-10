@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         message.textContent = "Registration successful!";
         message.style.color = "green";
 
+        
         form.reset(); // Clear form fields after successful validation
     });
 });
