@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!/\S+@\S+\.\S+/.test(email)) {
             message.textContent = "Invalid email format.";
             message.style.color = "red";
+            alert("Incomplete")
             return;
         }
 
