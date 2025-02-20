@@ -1,37 +1,24 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("registrationForm");
+function logIn() {
+    const username = document.getElementById("Username1").value.trim();
+    const password = document.getElementById("Password1").value.trim();
+    
+    if (username && password) {
+        window.open("Account_Profile_Write_Post.html", "_self");
+    } else {
+        alert("Incomplete credentials");
+    }
+}
 
-    form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent form submission
-
-        let name = document.getElementById("name").value.trim();
-        let email = document.getElementById("email").value.trim();
-        let password = document.getElementById("password").value.trim();
-        let message = document.getElementById("formMessage");
-
-        if (!/^[a-zA-Z\s]+$/.test(name)) {
-            message.textContent = "Invalid name: Only letters and spaces allowed.";
-            message.style.color = "red";
-            return;
-        }
-
-        if (!/\S+@\S+\.\S+/.test(email)) {
-            message.textContent = "Invalid email format.";
-            message.style.color = "red";
-            alert("Incomplete")
-            return;
-        }
-
-        if (password.length < 6) {
-            message.textContent = "Password must be at least 6 characters.";
-            message.style.color = "red";
-            return;
-        }
-
-        message.textContent = "Registration successful!";
-        message.style.color = "green";
-
-        
-        form.reset(); // Clear form fields after successful validation
-    });
-});
+function signUp() {
+    const username = document.getElementById("Username").value.trim();
+    const email = document.getElementById("Email").value.trim();
+    const password = document.getElementById("Password").value.trim();
+    const reconfirmPassword = document.getElementById("Reconfirm_Password").value.trim();
+    const acceptTerms = document.getElementById("Accept_term_and_conditions").checked;
+    
+    if (username && email && password && reconfirmPassword && acceptTerms) {
+        window.open("Account_Profile_Write_Post.html", "_self");
+    } else {
+        alert("Incomplete account information");
+    }
+}
